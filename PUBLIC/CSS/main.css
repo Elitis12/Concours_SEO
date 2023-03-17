@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,7 +45,10 @@ table {
 
 
 body{
-    background-image: url(../IMAGES/fond2.jpg);
+    background-image: url(../IMAGES/fond.png);
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header{
@@ -58,23 +56,178 @@ body{
     align-items: center;    
     padding-left: 1%;
     padding-right: 1%;
-    height: 10%;
+    height: 15%;
     margin: 0;
     background: rgba(25, 25, 25, .5);
     color: white;
 
 }
+.title{
+    color: white;
+    text-decoration: none;
+    display: inline;
+    padding-left: 1%;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: .02625rem;
+    line-height: 1.1875rem;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Golos Text', sans-serif;}
+
 .navbar{
     display: flex;
-    padding-left: 73%;
     align-items: center;
+    padding-left: 40%;
+    width: max-content;
+    white-space: nowrap;
+
+}
+.navbar ul{
+    width: auto;
 }
 .navbar li{
     color: white;
     text-decoration: none;
     display: inline;
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: .02625rem;
+    line-height: 1.1875rem;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Golos Text', sans-serif;
 }
-.navbar li:visited{
+.navbar a:visited{
     color: white;
     text-decoration: none;
 }
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li {
+    position: relative;
+    margin-left: 5%;
+    box-sizing: border-box; /* inclure le padding dans la largeur de l'élément */
+  }
+  
+.navbar ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-out;
+    transform-origin: left bottom;
+    transform: scaleX(0); /* pour cacher la ligne par défaut */
+  }
+  
+  .navbar ul li:hover::before {
+    width: 100%;
+    transform: scaleX(1); /* pour afficher la ligne */
+  }
+  
+  .case_info{
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 80%;
+    width: 40%;
+    border-radius: 5%;
+    background-color: rgba(54, 53, 53, 0.799);
+    overflow: hidden;
+
+  }
+  .contenu_case_info{
+    height: 99%;
+    width: 90%;
+    padding-top: 2%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+  .contenu_case_info p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    color: #dbdbdb;
+    line-height: 1.5;
+  }
+
+  .contenu_case_info h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    color: #dbdbdb;
+    line-height: 1.5;
+  }
+
+  .case_carrousel{
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    height: 79%;
+    width: 55%;
+    border-radius: 5%;
+    background-color: rgba(54, 53, 53, 0.799);
+    overflow: hidden;
+
+  }
+
+  .contenu_case_carrousel{
+    height: 99%;
+    width: 90%;
+    padding-top: 2%;
+    margin-left: 5%;
+    overflow: hidden;
+    max-width: 100%;
+
+  }
+  .contenu_case_carrousel p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    color: #dbdbdb;
+    line-height: 1.5;
+  }
+  .contenu_case_carrousel h1,h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    color: #dbdbdb;
+    line-height: 1.5;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .carousel img {
+    max-width: 55%;
+    margin-top: 3%;
+    float: left;
+
+  }
+  
+  .carousel p {
+    max-width: 45%;
+    margin: 0;
+    font-size: 14px;
+    float: right;
+
+  }
+.carousel h3 {
+  max-width: 45%;
+  margin: 0;
+  float: right;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 100px;
+}
+
+  
+  
+  
